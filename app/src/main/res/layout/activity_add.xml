@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/agriculture"
+    tools:context="com.esprit.rentagro.Activities.AddActivity">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/logo1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/logo"
+        />
+    <ScrollView
+        android:background="#CCfafafa"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+       android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+      >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:id="@+id/radiogroupe"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:layout_alignRight="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Offre"/>
+
+                <RadioButton
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_alignLeft="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Demande"/>
+
+
+            </RadioGroup>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radiogroupe"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/input_titlecon"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:textColorHint="#A0A0A0"
+                    android:id="@+id/input_title"
+                    android:layout_width="283dp"
+                    android:layout_height="48dp"
+                    android:textColor="#315818"
+                    android:hint="Title"
+                    tools:layout_editor_absoluteX="85dp"
+                    tools:layout_editor_absoluteY="231dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_titlecon"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/input_pricecon"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:textColorHint="#A0A0A0"
+                    android:id="@+id/input_price"
+                    android:layout_width="283dp"
+                    android:layout_height="48dp"
+                    android:textColor="#315818"
+                    android:hint="Price"
+                    android:inputType="number"
+                    tools:layout_editor_absoluteX="85dp"
+                    tools:layout_editor_absoluteY="231dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_pricecon"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/input_renttypecon"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <Spinner
+                    android:textColorHint="#A0A0A0"
+                    android:id="@+id/input_renttype"
+                    android:layout_width="283dp"
+                    android:layout_height="48dp"
+                    android:textColor="#315818"
+                    tools:layout_editor_absoluteX="85dp"
+                    tools:layout_editor_absoluteY="231dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_renttypecon"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/input_categcon"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <Spinner
+                    android:textColorHint="#A0A0A0"
+                    android:id="@+id/input_categ"
+                    android:layout_width="283dp"
+                    android:layout_height="48dp"
+                    android:textColor="#315818"
+                    tools:layout_editor_absoluteX="85dp"
+                    tools:layout_editor_absoluteY="231dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_categcon"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/input_typecon"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <Spinner
+                    android:textColorHint="#A0A0A0"
+                    android:id="@+id/input_type"
+                    android:layout_width="283dp"
+                    android:layout_height="48dp"
+                    android:textColor="#315818"
+                    tools:layout_editor_absoluteX="85dp"
+                    tools:layout_editor_absoluteY="231dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_typecon"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/input_datecon"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:textColorHint="#A0A0A0"
+                    android:id="@+id/input_date"
+                    android:layout_width="283dp"
+                    android:layout_height="48dp"
+                    android:textColor="#315818"
+                    android:hint="Click to set Date Of diponibility"
+                    android:focusable="false"
+                    tools:layout_editor_absoluteX="85dp"
+                    tools:layout_editor_absoluteY="231dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_datecon"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/input_durationcon"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:textColorHint="#A0A0A0"
+                    android:id="@+id/input_duration"
+                    android:layout_width="283dp"
+                    android:layout_height="48dp"
+                    android:textColor="#315818"
+                    android:inputType="number"
+                    android:hint="Duration"
+                    tools:layout_editor_absoluteX="85dp"
+                    tools:layout_editor_absoluteY="231dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_durationcon"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/input_telcon"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <EditText
+                    android:textColorHint="#A0A0A0"
+                    android:id="@+id/input_tel"
+                    android:layout_width="283dp"
+                    android:layout_height="48dp"
+                    android:textColor="#315818"
+                    android:inputType="number"
+                    android:hint="Tel Number"
+                    tools:layout_editor_absoluteX="85dp"
+                    tools:layout_editor_absoluteY="231dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_telcon"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/input_villecon"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <Spinner
+                    android:textColorHint="#A0A0A0"
+                    android:id="@+id/input_ville"
+                    android:layout_width="283dp"
+                    android:layout_height="48dp"
+                    android:textColor="#315818"
+                    tools:layout_editor_absoluteX="85dp"
+                    tools:layout_editor_absoluteY="231dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_villecon"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/input_delcon"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <Spinner
+                    android:textColorHint="#A0A0A0"
+                    android:id="@+id/input_del"
+                    android:layout_width="283dp"
+                    android:layout_height="48dp"
+                    android:textColor="#315818"
+                    tools:layout_editor_absoluteX="85dp"
+                    tools:layout_editor_absoluteY="231dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ScrollView
+                android:layout_below="@+id/input_delcon"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/ScrollView01"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/input_descriptioncon"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+                    <EditText
+                        android:textColorHint="#A0A0A0"
+                        android:id="@+id/input_description"
+                        android:layout_width="283dp"
+                        android:layout_height="100dp"
+                        android:textColor="#315818"
+                        android:hint="Description"
+                        tools:layout_editor_absoluteX="85dp"
+                        tools:layout_editor_absoluteY="231dp" />
+                </android.support.design.widget.TextInputLayout>
+            </ScrollView>
+
+
+
+
+            <ScrollView
+                android:layout_below="@+id/ScrollView01"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/ScrollView02"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/input_adressecon"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+                    <EditText
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+
+                        android:textColorHint="#A0A0A0"
+                        android:id="@+id/input_adresse"
+                        android:layout_width="283dp"
+                        android:layout_height="100dp"
+                        android:textColor="#315818"
+                        android:hint="Click to use location for Adress"
+                        tools:layout_editor_absoluteX="85dp"
+                        tools:layout_editor_absoluteY="231dp" />
+                </android.support.design.widget.TextInputLayout>
+            </ScrollView>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_below="@+id/ScrollView02"
+                android:id="@+id/lineimg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                >
+
+
+
+
+                <Button
+                    android:id="@+id/get_images2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colorAccent"
+                    android:text="Pick images"
+                    android:textColor="#ffffff"/>
+
+
+
+
+
+                <HorizontalScrollView
+                    android:id="@+id/hori_scroll_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="false"
+                    android:foregroundGravity="left"
+                    >
+
+
+                    <LinearLayout
+                        android:id="@+id/selected_photos_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:animateLayoutChanges="true"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+
+                        <!-- images will be added dynamicall to this layout -->
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_margin="20dp"
+                android:layout_below="@+id/lineimg"
+                android:layout_width="match_parent"
+                android:textColor="#FFFF"
+                android:textStyle="bold"
+                android:text="ADD"
+                android:id="@+id/add"
+                android:background="@color/colorAccent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
